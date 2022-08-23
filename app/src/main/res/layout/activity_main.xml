@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nameCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_4sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_baseline_search"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/appSilverColor"
+            android:hint="Enter Recipe Name"
+            android:text="chicken"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_12ssp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/spinnerCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_8sdp"
+        app:cardElevation="@dimen/_4sdp"
+        app:layout_constraintEnd_toStartOf="@id/searchBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameCard">
+
+        <Spinner
+            android:id="@+id/menuSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:backgroundTint="@color/black" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/searchBtn"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/appMainColor"
+        android:padding="@dimen/_8sdp"
+        android:text="search"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp"
+        app:cornerRadius="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@id/spinnerCard"
+        app:layout_constraintEnd_toEndOf="@id/nameCard"
+        app:layout_constraintStart_toEndOf="@id/spinnerCard"
+        app:layout_constraintTop_toTopOf="@id/spinnerCard" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchBtn" />
+
+    <ImageView
+        android:id="@+id/searchImage"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:alpha="0.8"
+        android:src="@drawable/ic_baseline_search"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerRecipe"
+        app:layout_constraintEnd_toEndOf="@id/recyclerRecipe"
+        app:layout_constraintStart_toStartOf="@id/recyclerRecipe"
+        app:layout_constraintTop_toTopOf="@id/recyclerRecipe" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

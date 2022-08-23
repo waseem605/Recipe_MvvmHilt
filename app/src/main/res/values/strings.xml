@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Recipe MvvmHilt</string>
+
+    -<string-array name="RecipeTime">
+    <item>Breakfast</item>
+    <item>Dinner</item>
+    <item>Lunch</item>
+    <item>Snack</item>
+    <item>Teatime</item>
+</string-array>
+
+
+</resources>
