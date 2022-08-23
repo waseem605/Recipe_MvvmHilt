@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecipeMvvmHilt">
 
+        <activity android:name=".hiltMvvm.RecipeDetailsViewActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
         <activity android:name=".hiltMvvm.MainListActivity"
+            android:screenOrientation="portrait"
             android:exported="false"/>
         <activity
             android:name=".MainActivity"

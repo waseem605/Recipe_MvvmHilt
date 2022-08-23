@@ -7,14 +7,6 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface RetroServiceInstance {
-
-/*    @GET("data/2.5/forecast")
-    fun getWeatherDetailsMVVM(
-        @Query("lat")ll: String,
-        @Query("lon")long: String,
-        @Query("appid")appid: String): Call<WeatherMainModel>*/
-
-
     @GET("api/recipes/v2/")
     fun getRecipe(
         @Query("q")name: String,

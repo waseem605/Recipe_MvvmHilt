@@ -70,8 +70,10 @@
         app:layout_constraintStart_toEndOf="@id/spinnerCard"
         app:layout_constraintTop_toTopOf="@id/spinnerCard" />
 
+
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerRecipe"
+        android:id="@+id/listRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -83,9 +85,20 @@
         android:layout_height="@dimen/_100sdp"
         android:alpha="0.8"
         android:src="@drawable/ic_baseline_search"
-        app:layout_constraintBottom_toBottomOf="@id/recyclerRecipe"
-        app:layout_constraintEnd_toEndOf="@id/recyclerRecipe"
-        app:layout_constraintStart_toStartOf="@id/recyclerRecipe"
-        app:layout_constraintTop_toTopOf="@id/recyclerRecipe" />
+        app:layout_constraintBottom_toBottomOf="@id/listRecyclerView"
+        app:layout_constraintEnd_toEndOf="@id/listRecyclerView"
+        app:layout_constraintStart_toStartOf="@id/listRecyclerView"
+        app:layout_constraintTop_toTopOf="@id/listRecyclerView" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/appMainColor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

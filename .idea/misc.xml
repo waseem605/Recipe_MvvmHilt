@@ -3,9 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/drawable/back_gradient.xml" value="0.2203125" />
+        <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/drawable/ic_baseline_access_time.xml" value="0.2203125" />
+        <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/drawable/ic_baseline_image.xml" value="0.2203125" />
+        <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/drawable/ic_baseline_local_fire_department_24.xml" value="0.2203125" />
+        <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/drawable/ic_baseline_person.xml" value="0.2203125" />
         <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/layout/activity_main_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/layout/activity_recipe_details_view.xml" value="0.24930491195551435" />
         <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/layout/sample_device_file_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/layout/sample_direction_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/layout/sample_ingredients_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/layout/sample_recipe_item.xml" value="0.20416666666666666" />
         <entry key="..\:/Study/AndroidStudio(all)/RecipeMvvmHilt/app/src/main/res/layout/sample_spinner_item.xml" value="0.20416666666666666" />
       </map>
     </option>

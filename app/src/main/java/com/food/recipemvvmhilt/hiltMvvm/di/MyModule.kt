@@ -1,8 +1,6 @@
 package com.food.recipemvvmhilt.hiltMvvm.di
 
-import com.food.recipemvvmhilt.hiltMvvm.network.RecipeApi
 import com.food.recipemvvmhilt.hiltMvvm.network.RetroServiceInstance
-import com.food.recipemvvmhilt.hiltMvvm.network.recipe.RepositoryRecipe
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

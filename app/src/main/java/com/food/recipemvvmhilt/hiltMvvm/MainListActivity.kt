@@ -10,13 +10,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.food.recipemvvmhilt.databinding.ActivityMainListBinding
 import com.food.recipemvvmhilt.hiltMvvm.network.model.Hit
 import com.food.recipemvvmhilt.hiltMvvm.network.model.RecipeMainModelView
-import com.food.recipemvvmhilt.hiltMvvm.weatherModels.WeatherList
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainListActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainListBinding
-    private lateinit var mListAdapter: GitListAdapter
+    private lateinit var mListAdapter: RecipeListAdapter
     private lateinit var mainActivityViewModel: MainActivityViewModel
 
 
@@ -35,8 +34,7 @@ class MainListActivity : AppCompatActivity() {
         val mealType = "Dinner"
         val appId = "8de29aae743926dea65823c2c79f136a"
 
-        mainActivityViewModel.callData(name,mealType)
-        mainActivityViewModel.mWeatherData.observe(this,mainObserverDataTranslator)
+
 
     }
 
@@ -52,7 +50,7 @@ class MainListActivity : AppCompatActivity() {
         }
 
     private fun showData(hits: ArrayList<Hit>) {
-        mListAdapter = GitListAdapter(hits,this){_,_->
+        mListAdapter = RecipeListAdapter(hits,this){ _, _->
 
         }
 

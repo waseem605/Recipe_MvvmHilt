@@ -8,7 +8,7 @@ import javax.inject.Inject
 @HiltViewModel
 class MainActivityViewModel @Inject constructor(private val repository: RetroRepository):ViewModel() {
 
-    var mWeatherData = repository.mainWeatherData
+    var mRecipeListData = repository.mainRecipeData
 
 
     fun callData(name:String,mealType:String){

@@ -11,7 +11,7 @@ import retrofit2.Response
 import javax.inject.Inject
 
 class RetroRepository @Inject constructor(private val retroServiceInstance: RetroServiceInstance) {
-    val mainWeatherData = MutableLiveData<RecipeMainModelView>()
+    val mainRecipeData = MutableLiveData<RecipeMainModelView>()
     companion object{
         private const val appId = "7327aa6c"
         private const val appKey = "74cc5cf7b60cf0ad918931c30f64f7d4"
@@ -32,7 +32,7 @@ class RetroRepository @Inject constructor(private val retroServiceInstance: Retr
                 Log.d(TAG, "onResponse: *-*-*--*-*-*-    ${response.code()}")
                 if (response.isSuccessful) {
                     Log.d(TAG, ":    ========  ${response.message()}")
-                    mainWeatherData.value = response.body()
+                    mainRecipeData.value = response.body()
                 }
             }
 
